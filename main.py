@@ -33,7 +33,7 @@ wspace=0.524
 
 
 (id_plot, phase_plot ,runT_plot, npacket_plot), (gps_plot, alt_plot, spd_plot, sepT_plot), (batV_plot, temp_plot, pres_plot, vidT_plot) = ax
-plot_titles = [['Komanda ID', '    Faza', 'Çalışma müddəti', 'Telemetriya paketlərinin sayı'], ['GPS', 'Hündürlük', 'Sürət', 'Daşıyıcıdan ayrıldığı vaxt'], ['Batareyanın gərginliyi', 'Temperatur', 'Təzyiq', 'Videogörüntünün müddəti']]
+plot_titles = [['Team ID', '    Phase', 'Running time', 'Number of packets received'], ['GPS', 'Altitude', 'Speed', 'Seperation time'], ['Battery voltage', 'Temperature', 'Presuure', 'Video recording time']]
 
 running_time = 0
 running_time_list= []
@@ -76,7 +76,7 @@ serialInst = serial.Serial("COM7", 9600)
 f = open('telemetry.csv', 'w', encoding="UTF8")
 writer = csv.writer(f)
 #id,phase, runtime, npacket,V, Alt, Spd, temp, pres, lat, long, septime, videotime
-writer.writerow(['Komanda ID', 'Faza', 'Çalışma müddəti', 'Telemetriya paketlərinin sayı', 'Batareyanın gərginliyi', 'Hündürlük', 'Sürət', 'Temperatur', 'Təzyiq', 'Coğrafi enlik', 'Coğrafi uzunluq', 'Daşıyıcıdan ayrıldığı vaxt', 'Videogörüntünün müddəti'])
+writer.writerow(['Team ID', 'Phase', 'Running time', 'Number of packets received', 'Battery voltage', 'Altitude', 'Speed', 'Temperature', 'Pressure', 'Latitude', 'Longtitude', 'Seperation time', 'Video recording time'])
 
 def request_start(val):
     data = "s"
