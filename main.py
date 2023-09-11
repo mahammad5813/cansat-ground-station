@@ -154,7 +154,7 @@ def updater(i):
             phase_plot.text(0.5, 0.5, phase, fontsize=20, color="#c2d2f5")
             phase_plot.set_facecolor("#000")
             
-            gps_plot.text(0.06, 0.5, f"Enlik      | Uzunluq\n{round(gps_values[0],4)} | {round(gps_values[1],4)}", fontsize=15, color="#c2d2f5")
+            gps_plot.text(0.06, 0.5, f"Lattiude   | Longtitude\n{round(gps_values[0],4)} | {round(gps_values[1],4)}", fontsize=15, color="#c2d2f5")
             gps_plot.set_facecolor('#000')
             
             runT_plot.text(0.4, 0.5, str(time_step), fontsize=20, color="#c2d2f5")
