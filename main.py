@@ -50,10 +50,7 @@ for _ in ax:
         plot.axis('off')
 
 
-    
 
-    
-gps_values = (42.0994, 43.9984)
 graphP = (alt_plot, spd_plot, temp_plot, pres_plot)
 
 for plot in graphP:
